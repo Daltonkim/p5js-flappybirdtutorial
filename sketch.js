@@ -2,12 +2,15 @@ var bird;
 var pipes = [];
 function setup() {
 createCanvas(800, 400);
+bg = loadImage("assets/bg.jpg");
+
+
 bird = new Bird();
 pipes.push(new Pipe());
 }
 
 function draw() {
-  background(0);
+  background(bg);
 for  (var i = pipes.length-1; i >= 0; i--){
  
 pipes[i].show();
